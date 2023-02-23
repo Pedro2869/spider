@@ -1,0 +1,158 @@
+@charset "UTF-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+body {
+  background-color: red;
+}
+
+header {
+  min-height: 10vh;
+  background-color: #1b1b1b;
+  padding: 1.3rem 0rem;
+  position: fixed;
+  width: 100%;
+  margin: auto;
+  z-index: 99;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+}
+
+#navImg {
+  justify-content: flex-start;
+  flex-grow: 3;
+  padding-left: 50px;
+}
+
+#navImg img {
+  height: 70px;
+  color: white;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+li {
+  padding-right: 60px;
+  list-style-type: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+section {
+  min-height: 100vh;
+  background-color: red;
+  background: url('https://res.cloudinary.com/codier/image/upload/v1610509461/s6tx81ata2tal3epwnu3.jpg') no-repeat center 115px fixed;
+  background-size: cover;
+}
+
+.container {
+  padding-top: 250px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  color: white;
+}
+
+.info {
+  width: 40%;
+}
+
+.info h1 {
+  text-align: center;
+  font-size: 4em;
+  margin-bottom: 20px;
+}
+
+.info p {
+  line-height: 2rem;
+}
+
+blockquote {
+  font-family: Georgia, serif;
+  position: absolute;
+  margin: 0.5rem;
+  padding: 0.5em 2em 0.5em 3em;
+}
+
+blockquote::before {
+  font-family: Georgia, serif;
+  position: absolute;
+  font-size: 4em;
+  line-height: 1;
+  top: 0;
+  left: 0;
+  content: "\201C";
+}
+
+blockquote::after {
+  font-family: Georgia, serif;
+  position: absolute;
+  float: right;
+  font-size: 4em;
+  line-height: 1;
+  right: 0;
+  bottom: -0.5em;
+  content: "\201D";
+}
+
+#bio {
+  background: url('https://res.cloudinary.com/codier/image/upload/v1610554675/ck7p6ahhuriv9n9wajxb.jpg')no-repeat center center fixed;
+  background-size: cover;
+}
+
+.container-bio {
+  padding-top: 550px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  color: white;
+  padding-right: 30px;
+}
+
+.container-bio .info {
+  border-radius: 25px;
+  padding: 12px;
+  background-color: rgba(0, 0, 0, 0.2);
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+}
+
+footer {
+  height: 100px;
+  background-color: #1b1b1b;
+  text-align: center;
+  color: white;
+}
+
+footer h3 {
+  padding-top: 50px;
+}
+
+footer h3 a {
+  text-decoration: none;
+  color: white;
+}
+
